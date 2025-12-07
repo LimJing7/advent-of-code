@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Test Input",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": ["--input_file", "test_inp.txt"]
+        },
+        {
+            "name": "Run Real Input",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": ["--input_file", "input.txt"]
+        }
+    ]
+}
